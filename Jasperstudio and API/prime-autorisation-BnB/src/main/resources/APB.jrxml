@@ -1,0 +1,151 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="autorisation_prelevement_bisso" language="java" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40" rightMargin="40" topMargin="40" bottomMargin="40" uuid="a1b2c3d4-0000-0000-0000-000000000001">
+	<style name="Default" default="true" fontName="DejaVu Sans" fontSize="10.0"/>
+	<parameter name="nomPrenoms" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="codeAgent" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="numeroCel" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="adresseMail" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="numeroPolice" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="lieuFait" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jourFait" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="moisFait" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="anneeFait" class="java.lang.String">
+		<defaultValueExpression><![CDATA["..."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jeConsens" class="java.lang.String">
+		<defaultValueExpression><![CDATA["false"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signature" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<title splitType="Stretch"/>
+	<detail>
+		<band height="730" splitType="Stretch">
+			<element kind="staticText" uuid="b2000001-0000-0000-0000-000000000001" x="0" y="132" width="515" height="14" fontName="DejaVu Sans" fontSize="10.0">
+				<text><![CDATA[Je soussigné(e),]]></text>
+			</element>
+			<element kind="staticText" uuid="b2000002-0000-0000-0000-000000000001" x="0" y="158" width="515" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[Nom et prénoms : ................................................................]]></text>
+			</element>
+			<element kind="textField" uuid="b2000003-0000-0000-0000-000000000001" x="95" y="154" width="360" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" vTextAlign="Middle">
+				<expression><![CDATA[$P{nomPrenoms}]]></expression>
+			</element>
+			<element kind="staticText" uuid="b2000004-0000-0000-0000-000000000001" x="0" y="178" width="515" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[Code agent : ................................................................]]></text>
+			</element>
+			<element kind="textField" uuid="b2000005-0000-0000-0000-000000000001" x="112" y="173" width="385" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$P{codeAgent}]]></expression>
+			</element>
+			<element kind="staticText" uuid="b2000006-0000-0000-0000-000000000001" x="0" y="198" width="515" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[Numéro de Cél : ................................................................]]></text>
+			</element>
+			<element kind="textField" uuid="b2000007-0000-0000-0000-000000000001" x="110" y="194" width="370" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" vTextAlign="Middle">
+				<expression><![CDATA[$P{numeroCel}]]></expression>
+			</element>
+			<element kind="staticText" uuid="b2000008-0000-0000-0000-000000000001" x="0" y="221" width="515" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[Adresse mail : ................................................................]]></text>
+			</element>
+			<element kind="textField" uuid="b2000009-0000-0000-0000-000000000001" x="91" y="217" width="380" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" vTextAlign="Middle">
+				<expression><![CDATA[$P{adresseMail}]]></expression>
+			</element>
+			<element kind="staticText" uuid="b2000010-0000-0000-0000-000000000001" x="0" y="247" width="515" height="46" markup="html" fontName="DejaVu Sans" fontSize="10.0" hTextAlign="Justified">
+				<paragraph lineSpacing="1_1_2"/>
+				<text><![CDATA[reconnais être agent mandataire libre de la compagnie <b>LEADWAY ASSURANCE IARD pour laquelle en rémunération des souscriptions effectuées,</b> des commissions me sont reversées régulièrement et hebdomadairement.]]></text>
+			</element>
+			<element kind="staticText" uuid="b2000011-0000-0000-0000-000000000001" x="0" y="300" width="515" height="57" markup="html" fontName="DejaVu Sans" fontSize="10.0" hTextAlign="Justified">
+				<paragraph lineSpacing="1_1_2"/>
+				<text><![CDATA[Par la présente, j'autorise expressément la compagnie <b>LEADWAY ASSURANCE IARD</b> à ponctionner, partie de ces commissions correspondant à ma prime d'assurance portant sur la police d'assurance Bisso Na Bisso souscrite sous le numéro ………………………............................auprès d'elle.]]></text>
+			</element>
+			<element kind="staticText" uuid="b2000012-0000-0000-0000-000000000001" x="0" y="363" width="515" height="30" fontName="DejaVu Sans" fontSize="10.0" hTextAlign="Justified">
+				<paragraph lineSpacing="1_1_2"/>
+				<text><![CDATA[Je reconnais également avoir été dûment informé(e) du montant des primes, de leur périodicité ainsi que des autres conditions de la police d'assurance souscrite.]]></text>
+			</element>
+			<element kind="staticText" uuid="b2000013-0000-0000-0000-000000000001" x="0" y="403" width="515" height="46" fontName="DejaVu Sans" fontSize="10.0" hTextAlign="Justified">
+				<paragraph lineSpacing="1_1_2"/>
+				<text><![CDATA[Cette autorisation est accordée pour faciliter le règlement de mes primes et ne saurait emporter une quelconque modification des conditions du contrat d'assurance et du contrat d'agent mandataire libre qui conservent leur plein et entier régime chacun en ce qui le concerne.]]></text>
+			</element>
+			<element kind="staticText" uuid="b2000014-0000-0000-0000-000000000001" x="0" y="458" width="515" height="46" fontName="DejaVu Sans" fontSize="10.0" hTextAlign="Justified">
+				<paragraph lineSpacing="1_1_2"/>
+				<text><![CDATA[La présente autorisation prend effet à compter de sa date de signature et demeure valable tant que l'adhésion au produit concerné est en vigueur, sauf révocation écrite acceptée par la compagnie d'assurance.]]></text>
+			</element>
+			<element kind="image" uuid="b3000001-0000-0000-0000-000000000001" x="21" y="518" width="30" height="30" onErrorType="Blank">
+				<expression><![CDATA["images/checkbox.png"]]></expression>
+			</element>
+			<element kind="staticText" uuid="b3000003-0000-0000-0000-000000000001" x="50" y="519" width="200" height="16" fontName="DejaVu Sans" fontSize="10.0" bold="true" vTextAlign="Middle">
+				<text><![CDATA[Je consens.]]></text>
+			</element>
+			<element kind="staticText" uuid="b4000001-0000-0000-0000-000000000001" x="130" y="549" width="45" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[Fait à]]></text>
+			</element>
+			<element kind="textField" uuid="b4000002-0000-0000-0000-000000000001" x="177" y="549" width="130" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{lieuFait}]]></expression>
+			</element>
+			<element kind="line" uuid="b4000003-0000-0000-0000-000000000001" x="177" y="563" width="130" height="1"/>
+			<element kind="staticText" uuid="b4000004-0000-0000-0000-000000000001" x="309" y="549" width="18" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[, le]]></text>
+			</element>
+			<element kind="textField" uuid="b4000005-0000-0000-0000-000000000001" x="329" y="549" width="25" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{jourFait}]]></expression>
+			</element>
+			<element kind="line" uuid="b4000006-0000-0000-0000-000000000001" x="329" y="562" width="25" height="1"/>
+			<element kind="staticText" uuid="b4000007-0000-0000-0000-000000000001" x="356" y="549" width="8" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[/]]></text>
+			</element>
+			<element kind="textField" uuid="b4000008-0000-0000-0000-000000000001" x="366" y="549" width="25" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{moisFait}]]></expression>
+			</element>
+			<element kind="line" uuid="b4000009-0000-0000-0000-000000000001" x="366" y="562" width="25" height="1"/>
+			<element kind="staticText" uuid="b4000010-0000-0000-0000-000000000001" x="393" y="549" width="8" height="14" fontName="DejaVu Sans" fontSize="10.0" vTextAlign="Middle">
+				<text><![CDATA[/]]></text>
+			</element>
+			<element kind="textField" uuid="b4000011-0000-0000-0000-000000000001" x="403" y="549" width="45" height="14" fontName="DejaVu Sans" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$P{anneeFait}]]></expression>
+			</element>
+			<element kind="line" uuid="b4000012-0000-0000-0000-000000000001" x="403" y="562" width="45" height="1"/>
+			<element kind="staticText" uuid="b5000001-0000-0000-0000-000000000001" x="-55" y="597" width="190" height="14" fontName="DejaVu Sans" fontSize="10.0" bold="true" hTextAlign="Center">
+				<text><![CDATA[LEADWAY VIE]]></text>
+			</element>
+			<element kind="staticText" uuid="b5000002-0000-0000-0000-000000000001" x="330" y="597" width="145" height="14" fontName="DejaVu Sans" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Signature de l'agent]]></text>
+			</element>
+			<element kind="staticText" uuid="b5000003-0000-0000-0000-000000000001" x="0" y="676" width="240" height="14" fontName="DejaVu Sans" fontSize="10.0" bold="true">
+				<text><![CDATA[Le Directeur Général]]></text>
+			</element>
+			<element kind="staticText" uuid="b5000004-0000-0000-0000-000000000001" x="0" y="693" width="240" height="14" fontName="DejaVu Sans" fontSize="10.0" bold="true">
+				<text><![CDATA[Tiornan COULIBALY]]></text>
+			</element>
+			<element kind="staticText" uuid="b5000005-0000-0000-0000-000000000001" x="284" y="693" width="240" height="14" fontName="DejaVu Sans" fontSize="9.0" hTextAlign="Center">
+				<text><![CDATA[Lu et approuvé, bon pour autorisation]]></text>
+			</element>
+			<element kind="staticText" uuid="b1000001-0000-0000-0000-000000000001" x="0" y="66" width="515" height="18" forecolor="#E8630A" fontName="DejaVu Sans" fontSize="11.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[AUTORISATION DE PRÉLÈVEMENT DES PRIMES SUR COMMISSIONS DUES]]></text>
+			</element>
+			<element kind="staticText" uuid="b1000002-0000-0000-0000-000000000001" x="0" y="86" width="515" height="18" forecolor="#E8630A" fontName="DejaVu Sans" fontSize="11.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[POUR LE PRODUIT BISSO NA BISSO]]></text>
+			</element>
+			<element kind="textField" uuid="abb043a9-20ef-4a1b-889e-a83450e13f87" x="200" y="329" width="184" height="14" hTextAlign="Center" vTextAlign="Top">
+				<expression><![CDATA[$P{numeroPolice}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="image" uuid="91a33d98-472b-4198-b855-2e7731595ed2" x="349" y="620" width="97" height="50" onErrorType="Blank" hImageAlign="Center" vImageAlign="Middle" style="Default">
+				<expression><![CDATA[$P{signature}]]></expression>
+			</element>
+		</band>
+	</detail>
+</jasperReport>

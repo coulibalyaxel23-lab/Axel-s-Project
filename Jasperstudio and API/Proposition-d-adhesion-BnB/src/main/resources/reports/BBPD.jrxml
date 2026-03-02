@@ -1,0 +1,636 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="BB_PROPOSITION_D_ADHESION_BNB_AGENT_AUTO" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="1a275795-c33d-42f5-831b-194c7d975f17" summaryNewPage="true">
+	<style name="default" default="true" fontName="DejaVu Sans" fontSize="8.0"/>
+	<style name="bold" fontName="DejaVu Sans" fontSize="8.0" bold="true"/>
+	<style name="title" fontName="DejaVu Sans" fontSize="10.0" bold="true"/>
+	<style name="sectionHeader" mode="Opaque" forecolor="#FFFFFF" backcolor="#4472C4" fontName="DejaVu Sans" fontSize="8.0" bold="true"/>
+	<style name="small" fontName="DejaVu Sans" fontSize="7.0"/>
+	<parameter name="nom" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dateNaissance" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="adresseDomicile" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="telephone" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="email" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="nationalite" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="typePieceIdentite" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="numeroPieceIdentite" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="profession" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="capitalAssure" class="java.lang.String">
+		<defaultValueExpression><![CDATA["500 000 F CFA"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dureeContrat" class="java.lang.String">
+		<defaultValueExpression><![CDATA["05 ans"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="nombreCotisantsMinimum" class="java.lang.String">
+		<defaultValueExpression><![CDATA["500"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dateEffet" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="primePayer" class="java.lang.String">
+		<defaultValueExpression><![CDATA["9 450 F CFA"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="frequencePaiement" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Mensuelle"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="modePaiement" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Mobile Money"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="optionVersement" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Paiement mobile"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="numeroTelephoneMobile" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="operateurMobile" class="java.lang.String">
+		<defaultValueExpression><![CDATA["MTN"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="frequencePaiementNormalized" class="java.lang.String">
+		<defaultValueExpression><![CDATA["mensuelle"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="modePaiementNormalized" class="java.lang.String">
+		<defaultValueExpression><![CDATA["mobilemoney"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="optionVersementNormalized" class="java.lang.String">
+		<defaultValueExpression><![CDATA["paiementmobile"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="operateurMobileNormalized" class="java.lang.String">
+		<defaultValueExpression><![CDATA["mtn"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="numeroBanque" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="nomBanque" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="adresseBanque" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jeConsens1" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[Boolean.FALSE]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jeConsens2" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[Boolean.FALSE]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<title height="774" splitType="Stretch">
+		<element kind="image" uuid="62237dc1-082b-441f-bf71-95b32d04db70" x="456" y="2" width="59" height="58" scaleImage="RetainShape" onErrorType="Blank">
+			<expression><![CDATA["/Users/m-coulibaly/Documents/leadway vie logo.png"]]></expression>
+			<box>
+				<pen lineWidth="0.0"/>
+			</box>
+		</element>
+		<element kind="image" uuid="5d088c2b-72f9-4a0f-98ed-9b95dd9f3132" x="207" y="32" width="110" height="77" scaleImage="RetainShape" onErrorType="Blank">
+			<expression><![CDATA["/Users/m-coulibaly/Downloads/Proposition-d-adhesion-BnB/src/main/resources/images/bisso-logo.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="f6b3a040-101e-47e7-86d1-3b418e1cd801" x="130" y="109" width="275" height="20" fontSize="12.0" bold="true" hTextAlign="Center" style="title">
+			<text><![CDATA[BULLETIN D'ADHÉSION]]></text>
+		</element>
+		<element kind="staticText" uuid="816944bd-38d7-440d-87f3-8fe65d133ba1" x="30" y="130" width="475" height="12" forecolor="#F72411" fontSize="7.0" hTextAlign="Center">
+			<text><![CDATA[LEADWAY VIE VOUS TRANSMETTRA VOTRE CONTRAT UNE FOIS QUE TOUTES LES EXIGENCES SERONT SATISFAITES]]></text>
+		</element>
+		<element kind="staticText" uuid="74c35c74-dadd-4522-a989-aaace2226a3f" mode="Opaque" x="202" y="144" width="115" height="11" forecolor="#FFFFFF" backcolor="#FFC000" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Avis Important]]></text>
+		</element>
+		<element kind="staticText" uuid="a8782e40-cec0-4832-b1b4-5698799b0797" x="30" y="162" width="475" height="38" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[Le contrat sera invalidé si vous manquez de divulguer tout fait qui pourrait influencer notre appréciation et l'acceptation de votre proposition. En cas de doute quant à savoir si certains faits sont matériels ou pertinents, ou s'il y a des changements apportés aux informations données avant le début du contrat, vous devez nous les communiquer par écrit.]]></text>
+		</element>
+		<element kind="rectangle" uuid="86420b8f-d8fb-4902-b95e-d9d275769158" mode="Opaque" x="30" y="203" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="fbede03a-330c-4468-b234-6cbae26eaca1" mode="Transparent" x="34" y="205" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    1.   ENCADRÉ]]></text>
+		</element>
+		<element kind="staticText" uuid="94e9e888-2abd-4764-a03b-dceea941e11c" x="31" y="224" width="475" height="41" fontSize="7.0" bold="true" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[« Cet encadré a pour objet d'attirer l'attention du Souscripteur sur certaines dispositions essentielles de la proposition d'assurance. Il est important que le Souscripteur lise intégralement la proposition d'assurance et pose toutes les questions qu'il estime nécessaires avant de signer le contrat. »]]></text>
+		</element>
+		<element kind="staticText" uuid="75829591-cb1b-44e1-ab76-7cffb67148cb" x="30" y="268" width="475" height="10" fontSize="7.0">
+			<text><![CDATA[1.   Ce contrat est un contrat de capitalisation avec tirage au sort]]></text>
+		</element>
+		<element kind="staticText" uuid="2a1d4d05-e697-4ac5-9e56-32e9579b6543" x="31" y="285" width="475" height="10" fontSize="7.0">
+			<text><![CDATA[2.   Garanties :]]></text>
+		</element>
+		<element kind="staticText" uuid="4fe3e07f-8ce3-491e-9a01-87550346f64c" x="39" y="303" width="465" height="20" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[• Au terme du contrat : Si le contrat n'a pas été tiré au sort jusqu'à son terme, vous recevrez le capital garanti sous réserve que le contrat soit à jour de ses primes. En plus du capital garanti, il peut y avoir des bonus pour participations aux bénéfices.]]></text>
+		</element>
+		<element kind="staticText" uuid="e68bcd1a-6b5a-42dd-aeb0-17cdb2ef6241" x="40" y="329" width="465" height="20" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[• Tirage au sort : Si vous êtes l'un des gagnants au tirage au sort, le capital garanti est payé immédiatement et le contrat prend fin. En plus du capital garanti, il peut y avoir des bonus pour participations aux bénéfices.]]></text>
+		</element>
+		<element kind="staticText" uuid="b7389404-9d15-4102-93d5-660bf793603a" x="31" y="360" width="475" height="32" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[3.   Délai de paiement des prestations : le paiement des prestations s'effectue au siège social de LEADWAY VIE, dans les quinze (15) jours ouvrés de la remise des pièces justificatives au terme du contrat ou en cas de tirage. En cas de rachat, ce délai demeure égal à quinze (15) jours ouvrés.]]></text>
+		</element>
+		<element kind="staticText" uuid="827b7e5d-8964-4d45-9120-4f2a32ea9e30" x="30" y="398" width="475" height="28" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[4.   Participation aux bénéfices : Conformément aux articles 81 et suivants du code CIMA, l'assureur s'engage à distribuer aux contrats au moins 85% des bénéfices financiers et 90% des bénéfices techniques au titre de la participation aux bénéfices.]]></text>
+		</element>
+		<element kind="staticText" uuid="74182636-12ef-4af6-bae4-16bd08367bbc" x="30" y="426" width="475" height="53" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+			<text><![CDATA[5.   Rachat : Le contrat comporte une clause de rachat. S'il exerce ce droit, les sommes lui sont versées dans un délai qui ne peut excéder 15 jours ouvrés à compter de la date de réception de la demande de rachat. Le rachat n'est possible que lorsqu'au moins 1 prime annuelle ou 10% des primes prévues au contrat ont été payées.
+Le Souscripteur peut disposer du tableau des valeurs de rachat et du cumul des cotisations sur toute la durée du contrat.]]></text>
+		</element>
+		<element kind="staticText" uuid="e31c828c-8f31-45f9-95c5-12a90f082e0c" x="40" y="480" width="475" height="10" fontSize="7.0" bold="true">
+			<text><![CDATA[6.   Frais et indemnités :]]></text>
+		</element>
+		<element kind="staticText" uuid="72c3d2a8-87db-4a1f-9482-9ae14a93556d" x="37" y="496" width="465" height="10" fontSize="7.0">
+			<text><![CDATA[- Chargement d'acquisition sur prime : 16,5% la première année et 4,64% la deuxième année]]></text>
+		</element>
+		<element kind="staticText" uuid="b9910732-f1a7-4881-8d24-45546f077238" x="39" y="510" width="465" height="10" fontSize="7.0">
+			<text><![CDATA[Frais de gestion mensuel du tirage au sort :]]></text>
+		</element>
+		<element kind="rectangle" uuid="e1d85b2a-bedf-42ae-9454-f75a33f9be54" x="38" y="538" width="465" height="12" forecolor="#000000" backcolor="#D3D3D3"/>
+		<element kind="staticText" uuid="b2c815c5-a1de-48ce-8acf-b75626ab40c8" x="38" y="538" width="200" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Nombre minimum d'assurés à jour]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="fc246289-c8aa-4c4f-9d88-ed23c2e966f9" x="238" y="538" width="38" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[250]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="1c99f20d-51f2-48b5-8c9c-dde9268eb023" x="276" y="538" width="38" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[500]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="f164e126-125c-4e4d-b7ec-9cd51f8fad7f" x="314" y="538" width="38" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[1 000]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="5fc7de1d-0572-49b3-b96f-13698ae76ca1" x="352" y="538" width="38" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[1 500]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="3a3ab58e-4a85-440f-97d9-692497394a47" x="390" y="538" width="38" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[2 000]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="80da5502-0cee-463e-bd13-b6bede0b99ee" x="428" y="538" width="38" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[5 000]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="df97711e-2713-4338-bb85-484e105d3e81" x="466" y="538" width="37" height="12" fontSize="6.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[10 000]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="030aa24f-1b50-44bf-aea8-23cb3bde7b3d" x="38" y="550" width="200" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Frais de gestion]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="46c3c997-851e-4b14-b484-9b63cf8980f8" x="238" y="550" width="38" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[1 600]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="e665f23c-e49e-41b9-9f0b-4f5b3690e66b" x="276" y="550" width="38" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[800]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="2f82fe70-c307-469c-8d25-c2b6a0c6f279" x="314" y="550" width="38" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[400]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="262a4abc-b1ea-4ecb-bf18-48d0ac09a322" x="352" y="550" width="38" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[267]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="7644a697-51ec-4563-b37f-4fb001a25c8b" x="390" y="550" width="38" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[200]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="aab1d9f1-f3a0-4c2e-8e88-afa7a60aa07a" x="428" y="550" width="38" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[80]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="d2a071b8-6690-417e-a4a1-f1b3e6e3de99" x="466" y="550" width="37" height="12" fontSize="6.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[40]]></text>
+			<box>
+				<pen lineWidth="0.5"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="6b0d29af-856d-4759-9b2f-25423d50c258" x="127" y="583" width="260" height="10" fontSize="7.0">
+			<text><![CDATA[- Pénalité de rachat : 5% pendant les 10 premières années de contrat.]]></text>
+		</element>
+		<element kind="staticText" uuid="8b05926c-983c-4976-8b57-5aab5b10949e" x="155" y="615" width="100" height="12" fontSize="8.0" bold="true" hTextAlign="Right">
+			<text><![CDATA[Je consens]]></text>
+		</element>
+		<element kind="rectangle" uuid="4ce3388c-3377-4839-9ace-c1f32c1be387" x="265" y="613" width="20" height="12" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="86abb613-5612-480b-9fe0-fb71fdf7f8aa" x="265" y="613" width="20" height="12" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[Boolean.TRUE.equals($P{jeConsens1}) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="rectangle" uuid="4c2a84ae-ccbd-4762-9b69-2a8e5d1352c3" mode="Opaque" x="28" y="641" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="c4a23f15-2de2-4df3-95ae-a14ae4d9fb8d" mode="Transparent" x="37" y="643" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    2.   INFORMATIONS PERSONNELLES]]></text>
+		</element>
+		<element kind="staticText" uuid="c9580469-6497-4fd9-a3ba-a3f52bca63cd" x="28" y="662" width="50" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(a) Nom :]]></text>
+		</element>
+		<element kind="line" uuid="a5219297-62c8-4fd2-9e5d-3d70ef3c1f12" x="78" y="673" width="190" height="1"/>
+		<element kind="textField" uuid="d8511bde-4016-426e-b5fd-7373eeecfd78" x="78" y="661" width="190" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{nom}]]></expression>
+		</element>
+		<element kind="staticText" uuid="559684a7-c3ab-42db-9c4d-8d0ddbebcde5" x="278" y="662" width="90" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(b) Date de naissance :]]></text>
+		</element>
+		<element kind="line" uuid="029d5031-9be2-43f4-82ba-4869813f98d0" x="368" y="673" width="135" height="1"/>
+		<element kind="textField" uuid="f350c2fc-3f0f-49cf-a492-13c44ec5669a" x="368" y="661" width="135" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{dateNaissance}]]></expression>
+		</element>
+		<element kind="staticText" uuid="5eafcedd-66f5-49d4-9831-9bf84677681b" x="16" y="678" width="89" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(c) Adresse du domicile :]]></text>
+		</element>
+		<element kind="line" uuid="6c62d7a0-5871-470a-a7b8-809f37f5c05f" x="110" y="689" width="98" height="1"/>
+		<element kind="textField" uuid="e4a7e87c-49b8-42f5-a6d9-11f8d01e8a70" x="110" y="677" width="98" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{adresseDomicile}]]></expression>
+		</element>
+		<element kind="staticText" uuid="32e56e1c-0632-4b24-b4cb-7603fc724112" x="213" y="678" width="60" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(d) Téléphone :]]></text>
+		</element>
+		<element kind="line" uuid="3be363d4-9416-43dd-99d5-3f035a0c2bb1" x="273" y="689" width="90" height="1"/>
+		<element kind="textField" uuid="db021faf-caf8-48d9-8f10-fb9acc4f0224" x="273" y="677" width="90" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{telephone}]]></expression>
+		</element>
+		<element kind="staticText" uuid="bfa312b0-ffa7-40e9-85ea-2612f074c47a" x="368" y="678" width="40" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(e) Email :]]></text>
+		</element>
+		<element kind="line" uuid="952a5287-7e48-45ab-95f6-059afae6fc94" x="408" y="689" width="95" height="1"/>
+		<element kind="textField" uuid="1a57a2e7-7253-4226-9207-0d7184401d6d" x="408" y="677" width="95" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{email}]]></expression>
+		</element>
+		<element kind="staticText" uuid="6ba2ab70-5212-407c-b1f6-af7bffb7fe95" x="28" y="695" width="60" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(f) Nationalité]]></text>
+		</element>
+		<element kind="line" uuid="121aa2fe-07e5-4d1e-8bef-c71bdac81101" x="88" y="706" width="130" height="1"/>
+		<element kind="textField" uuid="e758e530-d03e-4e58-aa77-71abb40414c6" x="88" y="694" width="130" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{nationalite}]]></expression>
+		</element>
+		<element kind="staticText" uuid="b16cb8ec-c07e-4626-bfb3-8dc77a4074d8" x="228" y="695" width="110" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(g) Type de pièce d'identité :]]></text>
+		</element>
+		<element kind="line" uuid="1f9684b4-1d1d-4c5e-bdaf-70dd085fbb81" x="338" y="706" width="165" height="1"/>
+		<element kind="textField" uuid="01e24fb4-a66f-473f-82f7-14da0be7dbb5" x="338" y="694" width="165" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{typePieceIdentite}]]></expression>
+		</element>
+		<element kind="staticText" uuid="27f20230-67a5-4b98-b70b-c35c1156e370" x="28" y="713" width="120" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(h) Numéro de pièce d'identité :]]></text>
+		</element>
+		<element kind="line" uuid="aad97671-98d6-47d9-8b9a-8d95c5fcb7d0" x="150" y="724" width="353" height="1"/>
+		<element kind="textField" uuid="bd1271f4-db98-4304-8cd4-780d4a39ee30" x="150" y="712" width="353" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{numeroPieceIdentite}]]></expression>
+		</element>
+		<element kind="staticText" uuid="524a5d00-7f9d-40cf-b0f2-da555a04bc83" x="28" y="730" width="60" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[(i) Profession :]]></text>
+		</element>
+		<element kind="line" uuid="de706929-e561-4fed-88b0-91757d85199f" x="88" y="741" width="415" height="1"/>
+		<element kind="textField" uuid="164e4dba-bc48-4f26-a5e0-62bb7010d960" x="88" y="729" width="415" height="12" fontSize="7.0" vTextAlign="Middle">
+			<expression><![CDATA[$P{profession}]]></expression>
+		</element>
+		<element kind="rectangle" uuid="9df2d4f0-bfdb-4cdc-b1d1-5c1c9089f2e7" mode="Opaque" x="22" y="757" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="09a6f2f5-2220-4b8e-8266-1fa451cc4431" mode="Transparent" x="31" y="759" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    3.   DETAILS SUR LES COUVERTURES]]></text>
+		</element>
+	</title>
+	<detail>
+		<band/>
+	</detail>
+	<summary height="800" splitType="Stretch">
+		<element kind="staticText" uuid="c7b0b080-cb20-4527-906b-8132a02dd87e" x="38" y="13" width="200" height="12" fontSize="8.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Capital assuré : 500 000 F CFA]]></text>
+		</element>
+		<element kind="staticText" uuid="599cd606-e1f1-4062-9cef-3bd2bdfcbf4e" x="308" y="13" width="205" height="12" fontSize="8.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Durée du contrat :   05 ans]]></text>
+		</element>
+		<element kind="staticText" uuid="750004f9-bacc-49b7-b111-097702bf0c67" x="38" y="26" width="475" height="12" fontSize="8.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Nombre de cotisants actifs minimum pour le déclenchement du tirage : 500]]></text>
+		</element>
+		<element kind="rectangle" uuid="32e0499c-df3e-4ec9-9fa8-19b374a1a395" mode="Opaque" x="20" y="47" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="f4371c3c-e8de-411f-84a6-3bdacd4a9a75" mode="Transparent" x="26" y="49" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    4.   DISPOSITIONS DE PRISE D'EFFET ET DE PRIME]]></text>
+		</element>
+		<element kind="staticText" uuid="ee23ee97-b212-408f-a58a-d1a39a8b4d50" x="32" y="69" width="132" height="18" fontSize="7.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Fréquence de paiement                           de la prime :   ]]></text>
+		</element>
+		<element kind="rectangle" uuid="4cf8a95f-3e8a-45b3-a2d7-114d0875cb15" x="166" y="73" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="0349de3f-e31f-4076-bcd9-ad46fa4c2c82" x="166" y="73" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{frequencePaiementNormalized} != null && $P{frequencePaiementNormalized}.contains("unique")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="cb5a770d-a417-40f8-b7f2-be78c749f199" x="178" y="72" width="35" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Unique]]></text>
+		</element>
+		<element kind="rectangle" uuid="10e993b4-12fe-4a68-a400-1ea599061da6" x="215" y="73" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="2e14c892-0e68-4b43-a9ed-3bf8e6592912" x="215" y="73" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{frequencePaiementNormalized} != null && $P{frequencePaiementNormalized}.contains("annuelle")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="ca23fb04-928b-42f1-ae6f-9e8328f185fb" x="227" y="72" width="38" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Annuelle]]></text>
+		</element>
+		<element kind="rectangle" uuid="67d8e20e-ff35-4431-b775-dd406daa7f27" x="267" y="73" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="40fae65d-a4a0-4f20-a64c-75d664615560" x="267" y="73" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{frequencePaiementNormalized} != null && $P{frequencePaiementNormalized}.contains("semestrielle")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="0d1d7759-2d11-41aa-968f-43b26635f70d" x="279" y="72" width="48" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Semestrielle]]></text>
+		</element>
+		<element kind="rectangle" uuid="0ecd5e2b-2bd1-4eab-96c2-fb0ace516f5d" x="329" y="73" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="a2fe28f9-cce3-41b3-898e-113217b170fb" x="329" y="73" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{frequencePaiementNormalized} != null && $P{frequencePaiementNormalized}.contains("trimestrielle")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="982dc4b0-99ce-4ffe-924d-8806ee2585f0" x="341" y="72" width="48" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Trimestrielle]]></text>
+		</element>
+		<element kind="rectangle" uuid="66293c31-3501-485e-9495-087a01342985" x="391" y="73" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="db348d7d-bc7c-406c-978e-cd5f9a4dd8e5" x="391" y="73" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{frequencePaiementNormalized} != null && $P{frequencePaiementNormalized}.contains("mensuelle")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="5eb3efc5-f8ed-43fa-9e0e-4040ab00f7e7" x="403" y="72" width="55" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Mensuelle]]></text>
+		</element>
+		<element kind="staticText" uuid="e03b52e6-c573-44e5-8524-e0d03c81e60f" x="31" y="96" width="70" height="12" fontSize="7.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Date d'effet :]]></text>
+		</element>
+		<element kind="line" uuid="615d8845-7508-4cc7-9b1a-8de762096e0d" x="104" y="104" width="403" height="1"/>
+		<element kind="textField" uuid="c1ec78aa-34e1-4909-a6ab-8df127f8ef93" x="104" y="92" width="403" height="12" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{dateEffet}]]></expression>
+		</element>
+		<element kind="staticText" uuid="53ecb8b5-fa89-4433-8dc2-4cfe593bf726" x="31" y="113" width="200" height="12" fontSize="8.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Prime à payer (CFA) : 9 450 F CFA]]></text>
+		</element>
+		<element kind="staticText" uuid="f9227e0a-2283-4a33-8703-7551bdc6cb8e" x="31" y="132" width="100" height="20" fontSize="7.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Mode de paiement                                               des prochaines primes :]]></text>
+		</element>
+		<element kind="rectangle" uuid="faad2d69-0020-4060-9f4d-f47e5f3cabc5" x="139" y="136" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="0eeda6da-8f87-47aa-b70b-2aa1f686f891" x="139" y="136" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{modePaiementNormalized} != null && $P{modePaiementNormalized}.contains("espece")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="a23faf5e-fde5-45fc-9581-4fb74f20bf9b" x="153" y="136" width="35" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Espèces]]></text>
+		</element>
+		<element kind="rectangle" uuid="52a6653e-af97-4d77-92c5-61cb7c2482f8" x="194" y="136" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="3ceb50e2-a01e-4411-b004-36dca13ff12a" x="194" y="136" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{modePaiementNormalized} != null && $P{modePaiementNormalized}.contains("mobilemoney")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="95c7e656-68fc-41ec-acbe-f7e9bc1f597e" x="209" y="136" width="50" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Mobile Money]]></text>
+		</element>
+		<element kind="rectangle" uuid="00f5c9b5-69ef-41b2-8255-c430e0f4df0e" x="267" y="136" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="c29e4603-d3b3-432e-a296-e73955ddb1ee" x="267" y="136" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{modePaiementNormalized} != null && $P{modePaiementNormalized}.contains("cheque")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="199ab103-8f62-4fca-8388-a82692f34361" x="282" y="136" width="35" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Chèque]]></text>
+		</element>
+		<element kind="rectangle" uuid="4c15fc81-5558-498b-ad72-a27394339b23" x="319" y="136" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="4ba8a01f-bc22-4bcc-adad-98181cfdb39d" x="319" y="136" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{modePaiementNormalized} != null && $P{modePaiementNormalized}.contains("virement")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="1b397a49-48ae-448b-9060-bd6af4bd7369" x="333" y="136" width="74" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Virement bancaire]]></text>
+		</element>
+		<element kind="rectangle" uuid="73163801-c747-4626-81f7-c764d64cb15e" x="408" y="136" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="a19e7531-f394-4962-a5a6-c2187f42d5ba" x="408" y="136" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{modePaiementNormalized} != null && $P{modePaiementNormalized}.contains("prelevement")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="b8a6c348-cdcb-4e10-8249-de8d1bda36c7" x="422" y="136" width="129" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Prélèvement automatique]]></text>
+		</element>
+		<element kind="staticText" uuid="46e32b05-bd36-45c9-b265-28e010580e44" x="53" y="160" width="475" height="16" forecolor="#FF0000" fontSize="6.0" italic="true" hTextAlign="Justified">
+			<text><![CDATA[*L'argent en espèces n'est autorisé que lorsqu'il est remis à un(e) caissier(ère) dans les locaux de LEADWAY VIE contre reçu.]]></text>
+		</element>
+		<element kind="rectangle" uuid="3bb7d71a-e1ed-4322-952f-1090f392f3c9" mode="Opaque" x="20" y="172" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="065afbe4-2eee-45ee-9943-ab4594f3e801" mode="Transparent" x="26" y="174" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    5.   COMMENT VOUDRIEZ-VOUS QUE LES PRESTATIONS VOUS SOIENT VERSÉES ?]]></text>
+		</element>
+		<element kind="staticText" uuid="13a0a2fa-4d97-46f0-a50a-f8b01e3cea24" x="25" y="195" width="122" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Veuillez choisir l'option souhaitée :]]></text>
+		</element>
+		<element kind="rectangle" uuid="68285cb5-b6c1-47bc-b511-33caa0c366c1" x="149" y="196" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="83ec7a2e-a966-4dac-b80b-756d390311f7" x="149" y="196" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{optionVersementNormalized} != null && $P{optionVersementNormalized}.contains("paiement")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="909d0dcb-4b9a-45ea-a28c-69910d70f459" x="161" y="195" width="60" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Paiement mobile]]></text>
+		</element>
+		<element kind="rectangle" uuid="68c8ac6f-1457-4638-a9a6-ec50963a9a9c" x="225" y="196" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="79ff22f4-0d53-445d-9b9b-351a52a24295" x="225" y="196" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{optionVersementNormalized} != null && $P{optionVersementNormalized}.contains("virement")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="76f930a0-c9ca-49fc-bfbe-39ede6160a17" x="237" y="195" width="70" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Virement bancaire]]></text>
+		</element>
+		<element kind="rectangle" uuid="5aa460d3-93cb-4984-8b27-07cdf369d706" x="310" y="196" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="a5aac8c0-a904-467a-bf2c-1bc4f40ddb47" x="310" y="196" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{optionVersementNormalized} != null && $P{optionVersementNormalized}.contains("mise")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="ed5be9da-9008-49e7-864f-b0b39fd3d2a1" x="323" y="195" width="148" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Mise à disposition à la banque]]></text>
+		</element>
+		<element kind="staticText" uuid="b0993b23-cedd-4ecd-9e13-22f03c1cfe32" x="25" y="215" width="220" height="23" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Pour le paiement mobile, veuillez renseigner le numéro             de téléphone du compte mobile :]]></text>
+		</element>
+		<element kind="line" uuid="c16979fa-692f-40fd-839e-4bd27b9a3693" x="247" y="231" width="253" height="1"/>
+		<element kind="textField" uuid="1d181c64-ca9d-4824-adc3-7067813dc150" x="247" y="221" width="253" height="10" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{numeroTelephoneMobile}]]></expression>
+		</element>
+		<element kind="staticText" uuid="9942bf8d-87e8-4484-a27c-b5f16dbbf92a" x="32" y="244" width="50" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Opérateur :]]></text>
+		</element>
+		<element kind="rectangle" uuid="deaeacf1-fb00-4f24-a5ec-d2b4c9eefc75" x="77" y="245" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="666e9996-0486-4552-ad65-230eff25a3df" x="77" y="245" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{operateurMobileNormalized} != null && $P{operateurMobileNormalized}.contains("orange")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="4d0aa2a2-e8a7-4f00-a311-9ec3784009e2" x="89" y="244" width="32" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[ORANGE]]></text>
+		</element>
+		<element kind="rectangle" uuid="32d72f7e-aff3-4ade-9b31-caf43d5d7a42" x="123" y="245" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="6db8d330-f2c9-4780-ad2a-4d563d3619a7" x="123" y="245" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{operateurMobileNormalized} != null && $P{operateurMobileNormalized}.contains("mtn")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="ad1d5873-f592-4886-bcd8-d57062525adb" x="135" y="244" width="25" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[MTN]]></text>
+		</element>
+		<element kind="rectangle" uuid="6c075568-eb5a-4d47-b43d-fae04a83cd30" x="162" y="245" width="10" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="7b4a1b81-97e2-4b14-bc59-ade13ad155a7" x="162" y="245" width="10" height="10" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[($P{operateurMobileNormalized} != null && $P{operateurMobileNormalized}.contains("moov")) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="3ca331cf-0536-48d1-a3d2-09c753a96aea" x="174" y="244" width="30" height="12" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[MOOV]]></text>
+		</element>
+		<element kind="staticText" uuid="0f84195e-acea-415b-bd6d-ebf443218488" x="25" y="261" width="200" height="10" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Pour le virement bancaire, veuillez renseigner :]]></text>
+		</element>
+		<element kind="staticText" uuid="1340b55c-c261-49d4-b7ec-72139bfc7676" x="35" y="277" width="80" height="10" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Le numéro de compte :]]></text>
+		</element>
+		<element kind="rectangle" uuid="e31f06e5-bf67-4551-9c60-609d3465ff4e" x="117" y="277" width="230" height="10" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="831780bc-1fe3-4482-9e30-2fe55f3f25eb" x="116" y="277" width="230" height="10" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{numeroBanque}]]></expression>
+		</element>
+		<element kind="staticText" uuid="099c26d5-05e8-43c8-97a8-e80636a8252d" x="35" y="293" width="80" height="10" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[Le nom de la banque :]]></text>
+		</element>
+		<element kind="line" uuid="0bb08761-3e11-485f-9bb3-11ec55c6c005" x="117" y="302" width="383" height="1"/>
+		<element kind="textField" uuid="1d535da7-673c-4af5-bbb5-8188ddf68832" x="117" y="292" width="383" height="10" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{nomBanque}]]></expression>
+		</element>
+		<element kind="staticText" uuid="fd9f1404-2776-4575-abf7-b2afd92fce12" x="24" y="309" width="90" height="10" fontSize="7.0" vTextAlign="Middle">
+			<text><![CDATA[L'adresse de la banque :]]></text>
+		</element>
+		<element kind="line" uuid="9270f95f-205c-448b-bf4b-b323e88dbc04" x="117" y="318" width="383" height="1"/>
+		<element kind="textField" uuid="297db476-b4d5-48ea-a169-8acf4edf17c2" x="117" y="308" width="383" height="10" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{adresseBanque}]]></expression>
+		</element>
+		<element kind="rectangle" uuid="99f82fea-1a79-43bb-ae9f-6fe1dce8ed0e" mode="Opaque" x="23" y="327" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="4d13a301-fea6-4380-af06-b8bd0a9e5784" mode="Transparent" x="29" y="329" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    6.   BENEFICIAIRE]]></text>
+		</element>
+		<element kind="staticText" uuid="663c2631-54f3-4090-b7ac-284667ba0c78" x="25" y="347" width="475" height="20" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[Dans ce contrat, le Bénéficiaire est le Souscripteur nommément désigné aux conditions particulières. Les héritiers du Souscripteur se substituent de plein droit à celui-ci s'il décède (article 64 du code CIMA).]]></text>
+		</element>
+		<element kind="rectangle" uuid="1c98d325-f663-4628-aa91-77bb662c4a32" mode="Opaque" x="23" y="376" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="9c90006e-d8c8-42db-997d-5af64a44c380" mode="Transparent" x="21" y="378" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    7.   DECLARATION (VEUILLEZ LIRE AVANT DE SIGNER)]]></text>
+		</element>
+		<element kind="staticText" uuid="9f683623-5c64-4707-9376-94d9fa17161b" x="25" y="398" width="475" height="98" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[Je déclare que selon mes connaissances et mon intime conviction, les informations ci-dessus sont exactes et complètes et seront la base du contrat établi à ce sujet. Je donne mon consentement à LEADWAY VIE pour obtenir des renseignements médicaux de tout médecin qui, à tout moment m'a apporté des soins pour tout ce qui affecte ma santé physique ou mentale et je renonce à toutes les dispositions de la loi interdisant la divulgation de ces connaissances ou informations. Je consens à l'autorité de cette déclaration avant et après ma mort. Je consens en outre que si une fausse déclaration était contenue dans cette proposition, toutes les sommes qui auront été versées au titre de cette assurance seront confisquées et l'assurance sera absolument nulle et non avenue. Je consens que tout paiement en espèces que je fais par le biais de tout agent de LEADWAY VIE sera fait à mes propres risques. LEADWAY VIE a offert des moyens électroniques et autres pour le paiement des primes et ne peut pas endosser la responsabilité de l'argent remis à ses agents.]]></text>
+		</element>
+		<element kind="rectangle" uuid="852454cc-38fc-4dbc-9f4a-3d98ecf783bb" mode="Opaque" x="23" y="497" width="475" height="14" backcolor="#FFC000" radius="3">
+			<pen lineWidth="0.0"/>
+		</element>
+		<element kind="staticText" uuid="57cb5c93-663a-477e-8ded-7a618f18ce50" mode="Transparent" x="21" y="499" width="412" height="10" forecolor="#FFFFFF" bold="true" vTextAlign="Middle">
+			<text><![CDATA[    8.   PROTECTION DES DONNÉES A CARACTÈRE PERSONNEL]]></text>
+		</element>
+		<element kind="staticText" uuid="a3da1504-84bd-4158-8073-ead86273dac3" x="25" y="520" width="475" height="98" fontSize="7.0" hTextAlign="Justified">
+			<paragraph lineSpacing="1_1_2"/>
+			<text><![CDATA[Dans le cadre du présent Contrat, LEADWAY VIE collecte et traite les données à caractère personnel de l'assuré et le cas échéant des Bénéficiaires, aux fins suivantes : gestion des contrats d'assurance ; gestion des sinistres et des prestations ; gestion de la relation clientèle et du marketing, dans les conditions décrites aux conditions générales d'assurance jointes au présent contrat. Les données à caractère personnel sont conservées pour les durées nécessaires à l'exécution de votre contrat d'assurance et à la mise en œuvre des finalités énoncées ci-avant. Ces durées pourront être majorées sur la base des durées de prescription légale en la matière.
+Conformément à la loi N°2013-450 du 19 juin 2013, l'Assuré dispose de droits (droit d'accès, droit de rectification, droit d'opposition, droit de retrait du consentement, droit de limitation, droit de portabilité, droit de suppression, droit à l'oubli). Il peut les exercer par voie postale : Cocody Angré, 7ème Tranche, 01 BP 11 944 Abidjan 01, ou par courriel au : rc@leadway.com.]]></text>
+		</element>
+		<element kind="staticText" uuid="9863e474-9c9b-4f11-8896-45b9e983ec7a" x="37" y="635" width="70" height="12" fontSize="8.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Je consens]]></text>
+		</element>
+		<element kind="rectangle" uuid="3c2c42cb-1b0e-4035-807e-b283081695cb" x="111" y="635" width="20" height="12" forecolor="#000000">
+			<pen lineWidth="0.5"/>
+		</element>
+		<element kind="textField" uuid="09e471b2-62a4-408d-b273-523dbf457bfe" x="111" y="635" width="20" height="12" fontSize="9.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[Boolean.TRUE.equals($P{jeConsens2}) ? "\u2714" : ""]]></expression>
+		</element>
+		<element kind="staticText" uuid="7e3d9551-71f5-4cc8-ad0e-7c7bf2b88aac" x="207" y="635" width="80" height="12" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[SIGNATURE]]></text>
+		</element>
+		<element kind="line" uuid="c6482ba4-998b-41d3-b49d-c1c2a5e580e1" x="207" y="647" width="80" height="1"/>
+		<element kind="staticText" uuid="68128b36-470e-4f46-a67b-9fa59fd8bf7a" x="407" y="635" width="80" height="12" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[DATE]]></text>
+		</element>
+		<element kind="line" uuid="f480b8f9-003b-4986-8e95-06d6aa2dde99" x="407" y="647" width="80" height="1"/>
+		<element kind="textField" uuid="9589127b-d7f9-47f5-99c4-84cf9fb48822" x="409" y="660" width="80" height="12" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{date}]]></expression>
+		</element>
+		<element kind="line" uuid="aa000003-0000-0000-0000-000000000003" x="-30" y="780" width="595" height="1"/>
+		<element kind="staticText" uuid="aa000004-0000-0000-0000-000000000004" mode="Opaque" x="-30" y="778" width="595" height="20" forecolor="#000000" backcolor="#FFC000" fontSize="6.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[              Siège social : 7e tranche près du centre commercial TERA / 01 BP 11944 Abidjan 01                                                                                                         Tel: 2520013100]]></text>
+		</element>
+		<element kind="image" uuid="ec3416ad-d0e1-4086-a40e-91bae90b119e" x="204" y="653" width="89" height="50" scaleImage="RetainShape" onErrorType="Blank" hImageAlign="Center" vImageAlign="Middle">
+			<expression><![CDATA[$P{signature} != null && !$P{signature}.isEmpty() ? $P{signature} : null]]></expression>
+		</element>
+	</summary>
+</jasperReport>
